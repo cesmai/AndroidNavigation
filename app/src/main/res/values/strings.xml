@@ -17,7 +17,7 @@
     <!-- Menu strings -->
     <string name="shopping_cart">Shopping Cart</string>
     <string name="settings">Settings</string>
-    <string name="home">Home</string>
+    <string name="home">MyHome</string>
     <string name="deeplink">Deep Link</string>
 
     <!-- Screen strings -->
