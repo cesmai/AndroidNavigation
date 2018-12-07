@@ -52,17 +52,24 @@ class HomeFragment : Fragment() {
             }
         }
 
+        // Way 1
         navigate_destination_button.setOnClickListener {
 //            Navigation.createNavigateOnClickListener(R.id.flow_step_one_dest)
             findNavController().navigate(R.id.flow_step_one_dest, null, options)
         }
 
-
-
-        // OnClickListener to navigate using an action
+        // Way 2 : OnClickListener to navigate using an action
         navigate_action_button.setOnClickListener ( // NOTE using () is OK, using {} is KO
             Navigation.createNavigateOnClickListener(R.id.next_action)
         )
+
+
+        // Way 3 : Note the usage of curly braces since we are defining the click listener lambda
+//        navigate_action_button.setOnClickListener {
+//            val action = HomeFragmentDirections.nextAction()
+//            action.setFlowStepNumber(1)
+//            findNavController().navigate(action)
+//        }
 
     }
 
